@@ -21,8 +21,6 @@ minion_binary = []
 
 @app.route('/run_stats', methods=['GET'])
 def run_stats():
-    mimion1 = [[7,-1],[5,-4]]
-    miunion1 = [[-3,3],[-3,6]]
     pollserver.recieved_encrypted_shares.append(minion1_shares) #[[7,-1],[5,-4]]
     pollserver.recieved_encrypted_shares.append(minion2_shares) #[[-3,3],[-3,6]]
     print(pollserver.recieved_encrypted_shares)
